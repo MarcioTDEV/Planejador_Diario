@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(231, 231, 231);
+}
+main{
+    padding: 10px;
+}
+input{
+    display: block;
+}
+.Form_AdicionarTarefa{
+    font-family: 'Lato', sans-serif;
+}
+.box_AdicionarTarefa{
+    font-family: 'Bebas Neue', cursive;
+}
+.box_GradeDeTarefas{
+    font-family: 'Lato', sans-serif;
+}
+header{
+    height: 40px;
+    background-color: teal;
+    margin-bottom: 10px;
+}
+
