@@ -2,24 +2,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 * {
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 body{
     background-color: rgb(231, 231, 231);
 }
 main{
     padding: 10px;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 input{
     display: block;
 }
-.Form_AdicionarTarefa{
-    font-family: 'Lato', sans-serif;
+textarea{
+    width: 300px;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
 }
+
+.Titulo_AdicionarTarefa h1 {
+    margin: 0;
+}
+
+.Form_AdicionarTarefa .form_TituloTarefa{
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.AdicionarTarefa, button{
+    background-color: white;
+    color: black;
+    border: 1px solid ;
+    padding: 5px;
+    box-shadow: none;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.AdicionarTarefa:hover, button:hover{
+    box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.75);
+    transition: 0.8s;
+
+}
+
+
 .box_AdicionarTarefa{
     font-family: 'Bebas Neue', cursive;
 }
 .box_GradeDeTarefas{
     font-family: 'Lato', sans-serif;
+    margin-top: 30px;
 }
 header{
     height: 40px;
@@ -27,3 +60,73 @@ header{
     margin-bottom: 10px;
 }
 
+
+.boxTarefa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+
+.pendente{
+    background-color: red;
+    color: #fff;
+}
+.pendente .tituloTarefa{
+    background-color: darkred;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 0.8em;
+}
+.pendente .tituloTarefa h1{
+    margin: 0;
+}
+.pendente .descricaoTarefa{
+    padding: 10px;
+}
+.statusTarefaStyle{
+    background-color: white;
+    padding: 10px;
+}
+.concluida{
+    background-color: rgb(0, 164, 0);
+    color: white;
+}
+.concluida .tituloTarefa{
+    background-color: darkgreen;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 0.8em;
+}
+.concluida .tituloTarefa h1{
+    margin: 0;
+}
+.concluida .descricaoTarefa{
+    padding: 10px;
+}
+.statusTarefaStyle{
+    background-color: white;
+    padding: 10px;
+}
+
+
+
+
+
+@media (min-width:700px) {
+    .box_GradeDeTarefas{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .boxTarefa{
+        margin: 0;
+    }
+}
+
+@media(min-width:1200px){
+    .box_GradeDeTarefas{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
