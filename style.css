@@ -5,7 +5,7 @@
     font-family: sans-serif;
 }
 body{
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(237, 237, 237);
 }
 main{
     padding: 10px;
@@ -25,6 +25,8 @@ textarea{
 .Titulo_AdicionarTarefa h1 {
     margin: 0;
 }
+
+
 
 .Form_AdicionarTarefa .form_TituloTarefa{
     width: 300px;
@@ -49,6 +51,7 @@ textarea{
 
 .box_AdicionarTarefa{
     font-family: 'Bebas Neue', cursive;
+    
 }
 .box_GradeDeTarefas{
     font-family: 'Lato', sans-serif;
@@ -56,7 +59,7 @@ textarea{
 }
 header{
     height: 40px;
-    background-color: teal;
+    background-color: purple;
     margin-bottom: 10px;
 }
 
